@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Rectangle.js"></script>
+</head>
+<body>
+<canvas  id="canvas" width="1400px" height="600" style=" border: 1px solid rebeccapurple"></canvas>
+<script !src="">
+    let canvas= document.getElementById('canvas');
+    hcn=canvas.getContext('2d');
+    let vehinh= new Rectangle(300,100)
+    let cRong= vehinh.getRong();
+    let cDai=vehinh.getDai()
+    let   dienTich=vehinh.getDientich()
+    console.log("dien tich la: " + dienTich)
+    let chuvi= vehinh.getChuvi()
+    console.log("chu vi la: " +chuvi)
+    hcn.beginPath()
+    hcn.fillStyle= 'red'
+    hcn.fillRect(500,200,cDai,cRong)
+    hcn.fill()
+
+</script>
+</body>
+</html>
